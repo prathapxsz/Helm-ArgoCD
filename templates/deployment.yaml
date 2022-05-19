@@ -22,6 +22,8 @@ spec:
     spec:
       containers: 
       - image: {{ .Values.containers.image }}
+        imagePullSecrets:
+        name: regcred
         imagePullPolicy: {{ .Values.containers.imagepullpolicy }}
         name: {{ .Values.containers.name }}
         env:

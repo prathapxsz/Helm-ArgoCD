@@ -7,7 +7,7 @@ Ingressname: sampleingress
 servicename: tomcat-svc
 
 replicas: 1
-
+revisionHistoryLimit: 0
 port: 8080
 
 app: app-dev-job
